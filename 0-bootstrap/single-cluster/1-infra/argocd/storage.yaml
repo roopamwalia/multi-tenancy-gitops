@@ -18,9 +18,9 @@ spec:
     helm:
       values: |
         ${STORAGE_CHART_NAME}:
-          channel: ${CHANNEL}
+          channel: stable-4.8
           sizeGiB: 512
-          storageClass: ${STORCLASS}
+          storageClass: gp2
           argo:
             namespace: openshift-gitops
             serviceAccount: openshift-gitops-cntk-argocd-application-controller
